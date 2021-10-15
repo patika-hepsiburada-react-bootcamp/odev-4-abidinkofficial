@@ -1,20 +1,16 @@
-import { useQuery, useLazyQuery } from "@apollo/client"
-import { GET_CITY_BY_NAME } from "../../api/queries"
+import { useState } from "react"
 
 import Search from "../../components/Search"
 import WeatherCard from "../../components/WeatherCard"
 
 const Home = () => {
-  const { loading, data, error } = useQuery(GET_CITY_BY_NAME, {
-    variables: { name: "corum", country: "TR", config: {units: "metric", lang: "tr"} }
-  })
-  console.log(data)
+  const [city, setCity] = useState("istanbul")
 
   return (
     <div>
       Home
-      <Search />
-      <WeatherCard />
+      <Search city={city} setCity={setCity} />
+      <WeatherCard city={city} />
     </div>
   )
 }
