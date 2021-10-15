@@ -1,9 +1,9 @@
-import './App.css';
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div className="App">
-      Weather app
+      <Home />
     </div>
   );
 }
