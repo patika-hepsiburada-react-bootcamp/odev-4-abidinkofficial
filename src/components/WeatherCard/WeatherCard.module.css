@@ -1,0 +1,89 @@
+.card {
+  color: #222222;
+  display: flex;
+  background-color: #eee;
+  border-radius: 15px;
+  margin: 5px;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+}
+
+.card > div {
+  width: 300px;
+  padding: 25px;
+}
+
+.card-intro {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 2.5px 5px 5px;
+  background-color: #bdbdbd;
+  border-radius: 15px;
+}
+
+.card-intro h1 {
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.card-intro span {
+  font-weight: 400;
+  color: #424242;
+}
+
+.card-temp {
+  margin: 5px 2.5px 5px 2.5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-temp h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  width: fit-content;
+  background-color: #bdbdbd;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card-misc {
+  background-color: #bdbdbd;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card-misc div {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #949494;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #494949;
+  font-weight: 800;
+}
+
+.card-misc div:last-child {
+  margin-bottom: 0;
+}
+
+.card-misc span {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  color: #eee;
+  background-color: #424242;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: initial;
+}
