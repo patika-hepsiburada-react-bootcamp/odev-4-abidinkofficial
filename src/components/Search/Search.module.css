@@ -7,15 +7,11 @@
 
 .Search select {
   width: 320px;
-  background-color: #eee;
+  background-color: rgb(133, 131, 202);
   border: none;
-  color: #222222;
+  color: #222;
   height: 40px;
   border-radius: 15px;
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
   padding: 0 5px 0 5px;
-}
-
-.Search select option {
-  height: 25px;
 }
