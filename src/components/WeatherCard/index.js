@@ -7,7 +7,7 @@ const WeatherCard = ({ city }) => {
     variables: { name: city, country: "TR", config: { units: "metric", lang: "tr" } }
   })
 
-  if (loading) return <div className={styles["card"]}>Loading</div>
+  if (loading) return <div className={styles["card"]}>Yüklenior...</div>
 
   return (
     data && <div className={styles["card"]}>
@@ -17,7 +17,9 @@ const WeatherCard = ({ city }) => {
           src={`https://openweathermap.org/img/wn/${data.getCityByName.weather.summary.icon}@4x.png`}
           alt={`${data.getCityByName.weather.summary.title}`}
         />
+        <p>{data.getCityByName.weather.summary.description}:</p>
         <h2>{data.getCityByName.weather.temperature.actual} &#176;C</h2>
+        
       </div>
       <div className={styles["card-temp"]}>
         <div className={styles["card-misc"]}>

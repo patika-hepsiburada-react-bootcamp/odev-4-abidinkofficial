@@ -10,7 +10,7 @@
   margin: 5px;
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
   padding-bottom: 25px;
-  height: 650px;
+  min-height: 650px;
   width: 320px;
 }
 
@@ -48,6 +48,11 @@
   width: fit-content;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+
+.card-intro p {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 img {
