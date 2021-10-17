@@ -1,22 +1,24 @@
 .card {
   color: #222222;
   display: flex;
+  flex-direction: column;
   background-color: #eee;
   border-radius: 15px;
   margin: 5px;
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 25px;
 }
 
 .card > div {
   width: 300px;
-  padding: 25px;
+  padding: 25px 25px 0px 25px;
+  align-items: center;
 }
 
 .card-intro {
   display: flex;
   flex-direction: column;
   margin: 5px 2.5px 5px 5px;
-  background-color: #bdbdbd;
   border-radius: 15px;
 }
 
@@ -24,11 +26,32 @@
   font-weight: 600;
   margin: 0;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .card-intro span {
   font-weight: 400;
   color: #424242;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.card-intro h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  background-color: #aaaaaa;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .card-temp {
@@ -37,22 +60,12 @@
   flex-direction: column;
 }
 
-.card-temp h2 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: 600;
-  width: fit-content;
-  background-color: #bdbdbd;
-  padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
 .card-misc {
   background-color: #bdbdbd;
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .card-misc div {
@@ -62,13 +75,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 5px;
+  padding-left: 10px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #494949;
   font-weight: 800;
+  width: 100%;
 }
 
 .card-misc div:last-child {
@@ -86,4 +100,5 @@
   font-weight: 400;
   letter-spacing: normal;
   text-transform: initial;
+  font-size: 14px;
 }
