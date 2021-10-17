@@ -7,6 +7,8 @@ const WeatherCard = ({ city }) => {
     variables: { name: city, country: "TR", config: { units: "metric", lang: "tr" } }
   })
 
+  if (loading) return <div className={styles["card"]}>Loading</div>
+
   return (
     !loading && <div className={styles["card"]}>
       <div className={styles["card-intro"]}>
