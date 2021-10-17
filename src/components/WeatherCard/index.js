@@ -10,7 +10,7 @@ const WeatherCard = ({ city }) => {
   if (loading) return <div className={styles["card"]}>Loading</div>
 
   return (
-    !loading && <div className={styles["card"]}>
+    data && <div className={styles["card"]}>
       <div className={styles["card-intro"]}>
         <h1>{data.getCityByName.name},<br /><span>Türkiye</span></h1>
         <img
